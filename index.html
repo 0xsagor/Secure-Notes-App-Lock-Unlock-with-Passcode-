@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secure Notes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>Secure Notes</h1>
+
+  <!-- Lock Screen -->
+  <div id="lock">
+    <input type="password" id="passcode" placeholder="Enter passcode">
+    <button onclick="unlock()">Unlock</button>
+    <p id="error"></p>
+  </div>
+
+  <!-- Notes Area -->
+  <div id="notes">
+    <textarea id="note" placeholder="Write your secure note here"></textarea>
+    <button onclick="saveNote()">Save</button>
+    <button onclick="lock()">Lock</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
